@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+/* Общие */
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+.fade-out{
+    opacity: 1;
+    visibility: hidden;
+}
+
+/* Переменные */
+:root{
+    --bg-color: white;
+
+    --form-color-hover: white;
+    --form-border-color: black;
+    --form-bg-color-hover: black;
+    
+    --navigator-border-color: black;
+
+    --text-color-1: black;
+    --text-color-2: #808080;
+}
+
+/* Часы */
+.time{
+    font-size: 17px;
+    margin-top: 18px;
+    margin-left: 16px;
+}
+
+/* Фон */
+.wrapper{
+    width: 430px;
+    height: 430px;
+    background-color: var(--bg-color);
+    margin-top: 13vh;
+}
+
+/* Оверлей */
+.loading-overlay{
+    position: fixed;
+    top: 14.4vh;
+    left: 50wh;
+    width: 430px;
+    height: 430px;
+    background-color: #969595;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+
+
+
+/* Стили первой страницы */
+/* Форма */
+.content-inner1{
+    height: 290px;
+    border: 1px solid white;
+}
+.form_container1{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    width: 398px;
+    height: 57px;
+    border: 1px solid var(--form-border-color);
+    margin: 0 auto;
+    cursor: pointer;
+}
+.form:hover{
+    color: var(--form-color-hover);
+    background-color: var(--form-bg-color-hover);
+}
+.form-account{
+    margin-top: 13px;
+}
+.text_form{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.text-up{
+    margin-left: 50%;
+    transform: translateX(-20%);
+}
+.text-account{
+    margin-left: 50%;
+    transform: translateX(-37%);
+}
+
+/* Навигация */
+.navigation_container{
+    width: 430px;
+    height: 67px;
+    border: 1px solid var(--navigator-border-color);
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+.nav_text-up{
+    margin-top: -4px;
+}
+.text{
+    font-size: 16px;
+}
+.favourites-text,
+.home-text,
+.cart-text{
+    color: var(--text-color-2);
+}
+.favourites-ico,
+.home-ico,
+.cart-ico{
+    stroke: var(--text-color-2);
+}
+.home:hover{
+    .home-ico{
+        stroke: var(--text-color-1);
+    }
+    .home-text{
+        color: var(--text-color-1);
+    }
+}
+.favourites:hover{
+    .favourites-ico{
+        stroke: var(--text-color-1);
+    }
+    .favourites-text{
+        color: var(--text-color-1);
+    }
+}
+.cart:hover{
+    .cart-text{
+        color: var(--text-color-1);
+    }
+    .cart-ico{
+        stroke: var(--text-color-1);
+    }
+}
+
+
+
+
+/* Стили второй страницы */
+.content-inner2{
+    height: 290px;
+    border: 1px solid white;
+}
+.form_container2{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.prod-bg{
+    margin: 0 auto;
+}
+.prod-text{
+    max-width: 201px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-left: 75px;
+}
+
+
+
+
+/* Стили третей страницы */
+.content-inner3{
+    height: 290px;
+    border: 1px solid white;
+}
+.form_container3{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    margin: 0 auto;
+}
+.logo svg{
+    fill: black;
+}
